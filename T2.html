@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task2</title>
+    <style>
+      #count {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="incrementBtn">Increment</button>
+    <p id="count">0</p>
+    <script>
+      const incrementBtn = document.getElementById("incrementBtn");
+      const count = document.getElementById("count");
+
+      incrementBtn.addEventListener("click", function () {
+        count.innerHTML = parseInt(count.innerHTML) + 1;
+        count.style.fontSize = 20 + count.innerHTML * 2 + "px";
+      });
+    </script>
+  </body>
+</html>
